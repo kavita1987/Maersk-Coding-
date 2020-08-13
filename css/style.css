@@ -1,0 +1,154 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial;
+}
+body{
+    background: #efefef;
+}
+
+h1{ text-align: center;
+    text-transform: capitalize;
+    border: 5px;
+    font-weight: normal;
+    border-style: solid;
+    border-color: #2B8EAD;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    width: 100%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.side{
+    flex: 30%;
+    text-align: center;
+    order: 2;
+}
+.main{
+    flex: 70%;
+    order: 1;
+}
+
+.flexBox{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    font-size: 8rem;
+    column-count: 3;
+    text-align: center; color: #fff;
+}
+
+.flexBox > div {
+    width: 33%;
+    text-align: center;
+    line-height: 180px;
+}
+
+.tile-color1{
+    background: #2B8EAD;
+}
+
+.tile-color2{
+    background: #6F98A8;
+}
+
+.tile-color3{
+    background: #BFBFBF;
+}
+
+.tile-color4{
+    background: #2F454E;
+}
+
+.tile-color5{
+    background: #72C3DC;
+}
+
+input[type="button"]{
+    background: #2B8EAD;
+    border-radius: 8px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    width: 90%;
+    padding: 10px;
+    margin-top: 20px;
+    border-bottom: 4px solid #2F454E;
+    border-top: 0px solid #2F454E;
+    border-right: 0px solid #2F454E;
+    border-left: 0px solid #2F454E;
+}
+
+input[type="button"]:focus {outline:0;}
+
+#footer{
+    padding: 10px;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 360px) {
+    body{
+        background-color: #fff;
+    }
+
+    h1{
+        background: #000;
+        color: #fff;
+        border: 0px;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    .main{
+        flex: 100%;
+        order: 2
+    }
+    .side{
+        flex: 100%;
+        order: 1
+    }
+
+    input[type="button"]{
+        width: 30%;
+        margin-bottom: 10px
+    }
+
+    .flexBox{
+        justify-content: center;
+    }
+
+     .flexBox > div{ width: 90%;
+         background: #efefef;
+         font-size: 1rem;
+         line-height: 40px;
+         margin: 2px;
+         color: #000;
+     }
+
+    .tile-color1{
+        border-left: 5px solid #2B8EAD;
+    }
+
+    .tile-color2{
+        border-left: 5px solid#6F98A8;
+    }
+
+    .tile-color3{
+        border-left: 5px solid #BFBFBF;
+    }
+
+    .tile-color4{
+        border-left: 5px solid #2F454E;
+    }
+
+    .tile-color5{
+        border-left: 5px solid #72C3DC;
+    }
+
+}
+
+
